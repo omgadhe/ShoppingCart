@@ -1,0 +1,151 @@
+<!Doctype html>
+<html>
+<head>
+<title>Dubai Marina Mall</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style type="text/css">
+#alphabet{
+  width:220px;
+}
+#category{
+  width:220px;
+}
+</style>
+</head>
+<body>
+<div class="row" >
+<div class="col-md-2" >
+<img src="logo.jpg" width="130px" height="130px" />
+</div>
+<div class="col-md-10" >
+<table align="right" style="margin-top: 6%; margin-right: 5%;">
+<tr>
+<th style="font-size:24px;"><a href="Home.html">Home |</a></th> 
+<th style="font-size:24px;"><a href="Shops.html">Shops |</a></th> 
+<th style="font-size:24px;"><a href="Brands.html">Brands |</a></th>
+<th style="font-size:24px;"><a href="#">Dining |</a></th> 
+<th style="font-size:24px;"><a href="#">Offers |</a></th> 
+<th style="font-size:24px;"><a href="#">About Us</a></th>
+</tr>
+</table>
+</div>
+</div>
+<div class="row" style="background-color: grey;">
+	<div class="col-md-1" ></div>
+	<div class="col-md-10">
+        <img class="mySlides" src="shopping1.jpg" />
+        <img class="mySlides" src="shopping2.jpg"/>
+        <img class="mySlides" src="shopping3.png"/>
+        <img class="mySlides" src="shopping4.jpg"/>
+        <img class="mySlides" src="shopping5.jpg"/>
+    </div>
+    <div class="col-md-1" style="background-color: #B8B8B8;"></div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+<hr>
+<div class="row">
+     <div class="col-md-1"></div>
+       <div class="col-md-6" style="background-color: #FFB6C1;">
+	       <h1>Shopping</h1>
+          <p>Shopping experience at Dubai Marina Mall is like no other. With a unique outdoor and indoor, high street like shopping, it has over 250 stores with 500 national and international brands across Premium, lifestyle & everyday fashion. With an eclectic selection across categories such as Fashion, Home, Cosmetics, Accessories, Denim & Children among others, you’re sure to find what you desire. There are various kiosks and also a monthly flea market, to pick up some exciting and fun stuff on the go.</p>
+            <br/>
+        </div>
+  <div class="col-md-4" style=" margin-top: 3%;margin-left: 4%;">
+      <h2>Mall Blocks</h2>
+      <a href="West.html"><img src="west.png" style="background-color: red;"/></a>
+      <a href="Center.html"><img src="center.png" style="background-color: grey; margin-left: 1%;"/></a>
+      <a href="East.html"><img src="east.png" style="background-color: brown; margin-left: 1%;"/></a>    
+  </div>
+</div>
+<hr>
+<div class="row" id="back">
+  <div class="col-md-1"></div>
+	<div class="col-md-3">
+        <h1 style="font-">Upcoming Events</h1>
+    </div>
+    <div class="col-md-4">
+       <h2>Search Shop</h2>
+        <b style="font-size: 20px;">More than 250 Shops are availiable!</b><br>
+      <form  method="get" action="">
+        <select name="alphabet" id="alphabet">
+               <option value="By Alphabet">By Alphabet</option>
+               <option  value="A">A</option>
+                <option  value="B">B</option>
+                <option  value="C">C</option>
+                <option  value="D">D</option>
+                <option  value="E">E</option>
+                <option  value="F">F</option>
+                <option  value="G">G</option>
+                <option  value="H">H</option>
+                <option  value="I">I</option>
+                <option  value="J">J</option>
+                <option  value="K">K</option>
+                <option  value="L">L</option>
+                <option  value="M">M</option>
+                <option  value="N">N</option>
+                <option  value="O">O</option>
+                <option  value="P">P</option>
+                <option  value="Q">Q</option>
+                <option  value="R">R</option>
+                <option  value="S">S</option>
+                <option  value="T">T</option>
+                <option  value="U">U</option>
+                <option  value="V">V</option>
+                <option  value="W">W</option>
+                <option  value="X">X</option>
+                <option  value="Y">Y</option>
+                <option  value="Z">Z</option>
+        </select>
+        <input type="submit" value="Go"/>
+      </form><br>
+      <form  method="get" action="">
+            <select name="category" id="category">
+               <option value="By Category">By Category</option>
+               <option  value="Electronics">Electronics</option>
+                <option  value="Appliances"></option>
+                <option  value="Clothing">Clothing</option>
+                <option  value="Shoes">Shoes</option>
+                <option  value="Watches">Watches</option>
+                <option  value="Home & Furniture">Home & Furniture</option>
+                <option  value="Books & More">Books & More</option>     
+        </select>
+        <input type="submit" value="Go"/>
+      </form>
+  </div>      
+    <div class="col-md-3">
+            <h1>Connect With Us </h1>
+            <ul>
+              <li><a href="https://www.facebook.com/dubaimarinamall" target="_blank"><img src="fb.png" alt="Facebook" > Facebook</a></li><br>
+              <li><a href="https://twitter.com/DXBMarinaMall" target="_blank"><img src="twit.png" alt="Twitter" > Twitter</a></li><br>
+              <li><a href="https://www.youtube.com/channel/UC-m7tVWMOFiprwf3Hzb7TQA" target="_blank"><img src="you-tube.jpg" alt="you-tube" > You Tube</a></li><br>
+              <li><a href="https://www.instagram.com/dubaimarinamall/" target="_blank"><img src="instagram.png" alt="Instagram"> Instagram</a></li><br>
+            </ul>
+      
+      </div>
+    </div>
+  <div class="col-md-2"></div>
+</div>  
+<hr>
+<footer style="background-color: grey;">
+  <h6 style="text-align: center; font-size: 15px;">Dubai Marina Mall</h6>
+  <p style="text-align: center;">Copyright © 2017 - 18   Privacy Policy</p>
+</footer>
+</body>
+</html>
